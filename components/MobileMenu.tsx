@@ -23,7 +23,7 @@ const MobileMenu = () => {
           <Menu className="size-7 cursor-pointer text-white" />
         </SheetTrigger>
 
-        <SheetContent className="bg-[#2C6269] px-7 py-16">
+        <SheetContent className="bg-[#2C6269] px-7 py-14">
           <SheetHeader>
             <SheetTitle>
               <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>

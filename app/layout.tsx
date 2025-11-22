@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ReadyToStart from "@/components/ReadyToStart";
 
 import "./globals.css";
 
@@ -30,6 +32,8 @@ export default function RootLayout({
       >
         <Header />
         <main className="mt-32">{children}</main>
+        <ReadyToStart />
+        <Footer />
       </body>
     </html>
   );
