@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
 
+import Header from "@/components/Header";
+
 import "./globals.css";
 
 const livvic = Livvic({
@@ -22,11 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${livvic.variable} mx-auto max-w-7xl bg-[#014E56] antialiased`}
+        className={`${livvic.className} mx-auto max-w-7xl bg-[#014E56] antialiased`}
       >
-        {children}
+        <Header />
+        <main className="mt-32">{children}</main>
       </body>
     </html>
   );
