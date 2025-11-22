@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import { NAV_LINKS } from "@/lib/constants";
 
+import MobileMenu from "./MobileMenu";
 import PrimaryBtn from "./PrimaryBtn";
 import Wrapper from "./Wrapper";
 
@@ -33,10 +34,13 @@ const Header = () => {
           : ""
       }`}
     >
+      {/* Logo & Navigation */}
       <div className="flex items-center justify-between gap-12 lg:gap-20">
+        {/* Logo */}
         <Link href="/" className="cursor-pointer">
           <Image src="/logo.svg" alt="Logo" width={160} height={40} />
         </Link>
+        {/* Navigation */}
         <ul className="hidden items-center justify-between gap-10 md:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.id}>
@@ -50,9 +54,12 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <PrimaryBtn className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#002529]">
+      {/* Contact Button */}
+      <PrimaryBtn className="hidden border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#002529] md:flex">
         contact us
       </PrimaryBtn>
+      {/* Mobile Menu */}
+      <MobileMenu />
     </Wrapper>
   );
 };
