@@ -19,10 +19,14 @@ const BuildManage = () => {
         height={244}
         className="absolute top-0 -right-25 lg:top-auto lg:bottom-0"
       />
-      <h2 className="max-w-[240px] text-[2rem] leading-8 font-bold tracking-normal text-white md:max-w-[445px] lg:text-5xl lg:leading-12">
+      {/* Title */}
+      <h2 className="relative max-w-[240px] text-[2rem] leading-8 font-bold tracking-normal text-white md:max-w-[445px] lg:text-5xl lg:leading-12">
         {" "}
         Build & manage distributed teams like no one else.
       </h2>
+      {/* underline */}
+      <span className="absolute top-8 left-7 h-[4px] w-[50px] bg-[#F67E7E] md:top-14 md:left-10 lg:left-16"></span>
+      {/* Text content */}
       <div className="flex max-w-[573px] flex-col gap-12 md:gap-8 lg:max-w-[540px] lg:pr-16">
         {BUILD_MANAGE.map((item) => (
           <div
