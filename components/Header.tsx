@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 import { NAV_LINKS } from "@/lib/constants";
 
@@ -11,28 +8,11 @@ import PrimaryBtn from "./PrimaryBtn";
 import Wrapper from "./Wrapper";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-
-    document.addEventListener("scroll", handleScroll, { passive: true });
-    return () => document.removeEventListener("scroll", handleScroll);
-  }, [scrolled]);
   return (
     <Wrapper
       as="header"
       role="banner"
-      className={`fixed top-0 right-0 left-0 z-50 flex items-center justify-between py-8 transition-all duration-300 ${
-        scrolled
-          ? "bg-opacity-90 border-opacity-10 border-b border-white bg-[#014E56] backdrop-blur-sm"
-          : ""
-      }`}
+      className="fixed top-0 right-0 left-0 z-50 flex items-center justify-between bg-[#014E56] py-8"
     >
       {/* Logo & Navigation */}
       <div className="flex items-center justify-between gap-12 lg:gap-20">

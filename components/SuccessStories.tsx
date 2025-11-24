@@ -9,8 +9,15 @@ const SuccessStories = () => {
     <Wrapper
       as="section"
       role="region"
-      className="flex flex-col items-center justify-center gap-16 bg-[#004047] py-30 lg:py-40"
+      className="relative flex flex-col items-center justify-center gap-16 bg-[#004047] pt-35 pb-41 lg:py-35"
     >
+      <Image
+        src="/bg-pattern-home-4-about-3.svg"
+        alt="Build Manage"
+        width={147}
+        height={100}
+        className="absolute top-0 left-0"
+      />
       <h2 className="max-w-[932px] text-center text-[2rem] leading-8 font-bold tracking-normal text-white lg:text-5xl lg:leading-12">
         Delivering real results for top companies. Some of our{" "}
         <span className="text-[#79C8C7]">success stories</span>.
@@ -49,6 +56,13 @@ const SuccessStories = () => {
           </div>
         ))}
       </div>
+      <Image
+        src="/bg-pattern-home-5.svg"
+        alt="Build Manage"
+        width={200}
+        height={100}
+        className="absolute right-0 bottom-0"
+      />
     </Wrapper>
   );
 };

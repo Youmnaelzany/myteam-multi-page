@@ -29,3 +29,27 @@ export const SUCCESS_STORIES = [
       "“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”",
   },
 ];
+
+export const BUILD_MANAGE = [
+  {
+    id: 1,
+    icon: "/icon-person.svg",
+    title: "Experienced Individuals",
+    description:
+      "Our network is made up of highly experienced professionals who are passionate about what they do.",
+  },
+  {
+    id: 2,
+    icon: "/icon-cog.svg",
+    title: "Easy to Implement",
+    description:
+      "Our processes have been refined over years of implementation meaning our teams always deliver.",
+  },
+  {
+    id: 3,
+    icon: "/icon-chart.svg",
+    title: "Enhanced Productivity",
+    description:
+      "Our customized platform with in-built analytics helps you manage your distributed teams.",
+  },
+];
