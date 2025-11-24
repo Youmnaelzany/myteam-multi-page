@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${livvic.className} mx-auto max-w-7xl bg-[#014E56] antialiased`}
       >
         <Header />
-        <main className="mt-32">{children}</main>
+        <main className="mt-26">{children}</main>
         <ReadyToStart />
         <Footer />
       </body>
