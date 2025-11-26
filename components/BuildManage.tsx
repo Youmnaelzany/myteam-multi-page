@@ -18,6 +18,7 @@ const BuildManage = () => {
         width={200}
         height={244}
         className="absolute top-0 -right-25 lg:top-auto lg:bottom-0"
+        loading="lazy"
       />
       {/* Title */}
       <h2 className="relative max-w-[240px] text-[2rem] leading-8 font-bold tracking-normal text-white md:max-w-[445px] lg:text-5xl lg:leading-12">

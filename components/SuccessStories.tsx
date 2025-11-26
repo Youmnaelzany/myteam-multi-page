@@ -17,6 +17,7 @@ const SuccessStories = () => {
         width={147}
         height={100}
         className="absolute top-0 left-0"
+        loading="lazy"
       />
       <h2 className="max-w-[932px] text-center text-[2rem] leading-8 font-bold tracking-normal text-white lg:text-5xl lg:leading-12">
         Delivering real results for top companies. Some of our{" "}
@@ -45,6 +46,7 @@ const SuccessStories = () => {
               width={62}
               height={62}
               className="rounded-full border border-[#C4FFFE]"
+              loading="lazy"
             />
             <Image
               src="/icon-quotes.svg"
@@ -52,6 +54,7 @@ const SuccessStories = () => {
               width={67}
               height={52}
               className="absolute -top-8 right-[44%] z-10"
+              loading="lazy"
             />
           </div>
         ))}
@@ -62,6 +65,7 @@ const SuccessStories = () => {
         width={200}
         height={100}
         className="absolute right-0 bottom-0"
+        loading="lazy"
       />
     </Wrapper>
   );

@@ -55,6 +55,7 @@ const MobileMenu = () => {
               width={200}
               height={200}
               className="absolute -right-[31%] bottom-0"
+              loading="lazy"
             />
           </div>
         </SheetContent>

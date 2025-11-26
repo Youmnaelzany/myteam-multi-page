@@ -53,3 +53,53 @@ export const BUILD_MANAGE = [
       "Our customized platform with in-built analytics helps you manage your distributed teams.",
   },
 ];
+export const MEET_DIRECTORS = [
+  {
+    id: 1,
+    name: "Nikita Marks",
+    title: "Co-founder & COO",
+    avatar: "/avatar-nikita.jpg",
+    description:
+      "“It always amazes me how much talent there is in every corner of the globe.”",
+  },
+  {
+    id: 2,
+    name: "Cristian Duncan",
+    title: "Co-founder & COO",
+    avatar: "/avatar-christian.jpg",
+    description:
+      "“Distributed teams required unique processes. You need to approach work in a new way.”",
+  },
+  {
+    id: 3,
+    name: "Cruz Hamer",
+    title: "Co-founder & COO",
+    avatar: "/avatar-cruz.jpg",
+    description:
+      "“Technology is at the forefront of enabling distributed teams. That's where we come in.”",
+  },
+  {
+    id: 4,
+    name: "Drake Heaton",
+    title: "Co-founder & CTO",
+    avatar: "/avatar-drake.jpg",
+    description:
+      "“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”",
+  },
+  {
+    id: 5,
+    name: "Griffin Wise",
+    title: "Lead Marketing",
+    avatar: "/avatar-griffin.jpg",
+    description:
+      "“Unique perspectives shape unique products, which is what you need to survive these days.”",
+  },
+  {
+    id: 6,
+    name: "Aden Allan",
+    title: "Head of Talent",
+    avatar: "/avatar-aden.jpg",
+    description:
+      "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+  },
+];

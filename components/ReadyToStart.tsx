@@ -22,6 +22,7 @@ const ReadyToStart = () => {
         width={200}
         height={144}
         className="absolute -bottom-5 left-0"
+        loading="lazy"
       />
     </Wrapper>
   );

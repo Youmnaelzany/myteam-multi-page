@@ -3,6 +3,11 @@ import Link from "next/link";
 
 import { FaInstagram, FaSquareFacebook, FaXTwitter } from "react-icons/fa6";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { NAV_LINKS } from "@/lib/constants";
 
 import Wrapper from "./Wrapper";
@@ -46,21 +51,42 @@ const Footer = () => {
       <div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:justify-between lg:flex-col lg:items-end lg:gap-11.5">
         {/* Social Media Links */}
         <ul className="flex items-center gap-6">
-          <li className="">
-            <Link href="/" className="cursor-pointer">
-              <FaSquareFacebook className="size-7 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
-            </Link>
-          </li>
-          <li className="">
-            <Link href="/" className="cursor-pointer">
-              <FaInstagram className="size-7 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
-            </Link>
-          </li>
-          <li className="">
-            <Link href="/" className="cursor-pointer">
-              <FaXTwitter className="size-7 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
-            </Link>
-          </li>
+          <Tooltip>
+            <TooltipTrigger>
+              <li className="">
+                <Link href="/" className="cursor-pointer">
+                  <FaSquareFacebook className="size-7 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
+                </Link>
+              </li>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Facebook</p>
+            </TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger>
+              <li className="">
+                <Link href="/" className="cursor-pointer">
+                  <FaInstagram className="size-7 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
+                </Link>
+              </li>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Instagram</p>
+            </TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger>
+              <li className="">
+                <Link href="/" className="cursor-pointer">
+                  <FaXTwitter className="size-7 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
+                </Link>
+              </li>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Twitter</p>
+            </TooltipContent>
+          </Tooltip>
         </ul>
         {/* Copyright */}
         <p className="text-[0.9375rem] leading-6.25 font-semibold text-white/80">

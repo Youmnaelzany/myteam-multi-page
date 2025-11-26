@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${livvic.className} mx-auto max-w-7xl bg-[#014E56] antialiased`}
+        className={`${livvic.className} mx-auto max-w-360 bg-[#014E56] antialiased`}
       >
         <Header />
         <main className="mt-26">{children}</main>
