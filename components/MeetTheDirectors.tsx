@@ -29,6 +29,7 @@ const MeetTheDirectors = () => {
       className="relative flex flex-col items-center justify-center gap-10 overflow-hidden bg-[#004047] py-22 md:gap-12 md:py-27 lg:gap-16 lg:py-35"
       as="section"
       role="region"
+      aria-label="Meet the Directors"
     >
       <Image
         src="/bg-pattern-about-2-contact-1.svg"
@@ -44,17 +45,21 @@ const MeetTheDirectors = () => {
       <div className="grid grid-cols-1 justify-between gap-x-3 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
         {MEET_DIRECTORS.map((directors) => (
           <div
+            key={directors.id}
             className={`relative flex w-[327px] flex-col items-center justify-center gap-4 bg-[#012F34] p-8 text-center transition-all duration-300 md:w-[281] lg:h-[253px] lg:w-[350px] ${flippedCards.includes(directors.id) ? "h-[253px]" : "h-full"}`}
           >
             {!flippedCards.includes(directors.id) ? (
               <>
-                <Image
-                  src={directors.avatar}
-                  alt={directors.name}
-                  width={96}
-                  height={96}
-                  className="rounded-full border border-[#C4FFFE]"
-                />
+                <div className="relative h-24 w-24">
+                  <Image
+                    src={directors.avatar}
+                    alt={`${directors.name}, ${directors.title}`}
+                    width={96}
+                    height={96}
+                    className="rounded-full border-2 border-[#C4FFFE] object-cover"
+                    sizes="(max-width: 768px) 96px, 120px"
+                  />
+                </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3 className="text-base leading-7 font-bold tracking-normal text-[#79C8C7]">
                     {directors.name}
@@ -79,7 +84,10 @@ const MeetTheDirectors = () => {
                     <TooltipTrigger>
                       <li className="">
                         <Link href="/" className="cursor-pointer">
-                          <FaXTwitter className="size-6 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
+                          <FaXTwitter
+                            className="size-6 rounded-full text-white transition duration-300 ease-in-out hover:text-[#F67E7E] focus:ring-2 focus:ring-[#F67E7E] focus:ring-offset-2 focus:outline-none"
+                            aria-label={`${directors.name}'s Twitter`}
+                          />
                         </Link>
                       </li>
                     </TooltipTrigger>
@@ -91,7 +99,10 @@ const MeetTheDirectors = () => {
                     <TooltipTrigger>
                       <li className="cursor-pointer">
                         <Link href="/" className="cursor-pointer">
-                          <FaLinkedin className="size-6 text-white transition duration-700 ease-in-out hover:text-[#F67E7E]" />
+                          <FaLinkedin
+                            className="size-6 rounded-sm text-white transition duration-300 ease-in-out hover:text-[#F67E7E] focus:ring-2 focus:ring-[#F67E7E] focus:ring-offset-2 focus:outline-none"
+                            aria-label={`${directors.name}'s LinkedIn`}
+                          />
                         </Link>
                       </li>
                     </TooltipTrigger>

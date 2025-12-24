@@ -7,8 +7,8 @@ const AboutIntro = () => {
     <Wrapper
       as="section"
       role="region"
-      aria-label="Best Talent"
-      className="relative flex flex-col items-center gap-4.5 overflow-hidden py-20 text-center md:py-28 lg:flex-row lg:items-end lg:justify-between lg:py-32 lg:text-left"
+      aria-label="About MyTeam"
+      className="relative flex flex-col items-center gap-4.5 overflow-hidden pt-20 pb-27 text-center md:py-28 lg:flex-row lg:items-end lg:justify-between lg:py-32 lg:text-left"
     >
       <h1 className="relative max-w-[248px] text-[2.5rem] leading-10 font-bold tracking-normal text-white md:max-w-[384px] md:text-[4rem] md:leading-14 lg:max-w-[600px] lg:text-[4rem] lg:leading-25">
         About
@@ -24,11 +24,14 @@ const AboutIntro = () => {
 
       <Image
         src="/bg-pattern-about-1-mobile-nav-1.svg"
-        alt="Best Talent"
+        alt=""
         width={200}
         height={200}
         className="absolute -right-25 -bottom-25 md:bottom-0"
         loading="lazy"
+        priority={false}
+        sizes="(max-width: 768px) 200px, 300px"
+        aria-hidden="true"
       />
     </Wrapper>
   );
